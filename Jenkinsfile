@@ -3,7 +3,7 @@ pipeline {
 		docker { image 'yelhadad/labs-task'}
 	}
 	triggers {
-		githubpush()
+		githubPush()
 	}
 
 	stages {
