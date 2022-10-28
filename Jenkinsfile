@@ -2,6 +2,9 @@ pipeline {
 	agent {
 		docker { image 'yelhadad/labs-task'}
 	}
+	triggers {
+		githubpush()
+	}
 
 	stages {
 		stage('Run') {
