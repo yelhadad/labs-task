@@ -4,9 +4,11 @@ pipeline {
 	}
 
 	stages {
-		stage('Run')
+		stage('Run') {
+			
 			steps {
 				sh 'python3 main.py'
 				}
+		}
 	}
 }
