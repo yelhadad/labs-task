@@ -1,6 +1,9 @@
 pipeline {
 	agent {
-		docker { image 'yelhadad/labs-task'}
+		dockerfile {
+			filename 'Dockerfile'
+			dir '.' 
+		}
 	}
 	triggers {
 		githubPush()
